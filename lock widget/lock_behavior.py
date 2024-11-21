@@ -3,7 +3,7 @@ from kivy.graphics import Color, Rectangle, RoundedRectangle
 
 class LockBehavior:
     def __init__(self, w, enabled=False, radius=None):
-        self.widget = w
+        self.widget = w  # Composition over inheritance!
         self.enabled = enabled
 
         # Draw the semi-transparent overlay
