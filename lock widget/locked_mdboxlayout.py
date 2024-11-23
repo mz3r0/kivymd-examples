@@ -22,10 +22,10 @@ class DisabledOverlayWidget(BoxLayout):
         # Bind size and position updates
         self.bind(size=self.update_overlay, pos=self.update_overlay)
 
-    def set_enabled(self, enabled):
+    def toggle_enabled(self):
         """ Method to enable or disable the widget. """
-        self.enabled = enabled
-        self.overlay.opacity = 0 if enabled else 0.5  # Hide overlay if enabled
+        self.enabled = not self.enabled
+        self.overlay.opacity = 0 if self.enabled else 0.5  # Hide overlay if enabled
 
     def update_overlay(self, *args):
         """ Method to toggle the overlay opacity. """
