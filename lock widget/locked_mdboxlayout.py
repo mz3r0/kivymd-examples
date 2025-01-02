@@ -47,3 +47,6 @@ class TestApp(MDApp):
 
 if __name__ == '__main__':
     TestApp().run()
+
+# This behavior is incomplete because in some instances children's
+    # on_touch_down is called while the parent's is not.
