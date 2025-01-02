@@ -1,3 +1,6 @@
+# Latest version, supports rounded edge widgets.
+# STILL IMPERFECT, is prone to the same on_touch_down issue as before.
+# KivyMD is likely at fault, not this code!
 from kivy.graphics import Color, Rectangle, RoundedRectangle
 
 
