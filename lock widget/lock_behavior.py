@@ -47,3 +47,6 @@ class LockBehavior:
                 and not touch.is_mouse_scrolling:
             return True  # Block touch events
         return False  # Allow other handlers to process the event
+
+# This behavior is incomplete because in some instances children's
+    # on_touch_down is called while the parent's is not.
